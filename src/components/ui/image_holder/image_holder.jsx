@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function image_holder() {
+export default function Imageholder({image_url, iamge_alt}) {
   return (
-    <div>
-      
-    </div>
+    <>
+      <img src={image_url} alt={iamge_alt} className='image' />
+    </>
   )
 }
