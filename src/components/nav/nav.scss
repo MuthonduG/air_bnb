@@ -1,0 +1,69 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding: 1rem;
+    place-items: center;
+
+    a {
+        text-decoration: none;
+        color: rgb(44, 42, 42);
+        padding: .5rem;
+        border-radius: .3rem;
+        transition: 500ms all ease;
+    }
+
+    &__logo, &__hyperlinks {
+        display: flex;
+        gap: .75rem;
+        font-size: 1.5rem;
+        place-items: center;
+        
+        span {
+            color: rgb(250, 49, 89);
+        }
+        
+        &-png {
+            width: 1.5rem;
+        }
+    }
+
+    &__hyperlinks {
+        gap: 1.5rem;
+        font-size: 1rem;
+
+        a {
+
+            &:hover {
+                background-color: rgb(240, 240, 240);
+                color: black;
+                letter-spacing: 1px;
+            }
+        }
+
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+
+        &-btn {
+            padding: .3rem;
+            display: flex;
+            gap: .5rem;
+            font-size: 1.5rem;
+            color: rgb(109, 109, 109);
+            border-radius: 2rem;
+            border: 2px solid rgb(212, 212, 212);
+            background: none;
+            cursor: pointer;
+            transition: 500ms all ease;
+
+            &:hover {
+                background-color: rgb(240, 240, 240);
+                box-shadow: 0 .5rem 0.5rem 0 rgb(109, 109, 109);
+            }
+        }
+    }
+
+}
